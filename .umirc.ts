@@ -41,10 +41,22 @@ export default defineConfig({
       path: '/table',
       component: './Table',
     },
+    {
+      name: '个人摘录',
+      path: '/person-record',
+      component: './Record',
+    },
   ],
   npmClient: 'pnpm',
   // 引入qiankun
   qiankun: {
     slave: {},
   },
+  // proxy: {
+  //   '/api/12': {
+  //     target: 'https://github.com/airuikun/technology-blog/issues/12',
+  //     changeOrigin: true,
+  //     pathRewrite: { '^/api/12': '' },
+  //   }
+  // }
 });
